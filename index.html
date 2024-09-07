@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<!-- Start of Selection -->
+<html lang="en" data-theme="bumblebee">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Safety Hub Egypt</title>
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="navbar.js"></script>
+  <link href="css/output.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+
+
+  <!-- nav -->
+  <header class="bg-white">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+
+      <!-- logo -->
+      <div class="flex lg:flex-1">
+        <a href="index.html" class="-m-1.5 p-1.5">
+          <span class="sr-only">Safety Hub Egypt Logo</span>
+          <img class="h-8 w-auto" src="/images/logo-black.png" alt="" />
+        </a>
+      </div>
+      <!-- logo end -->
+
+      <!-- mobile menu -->
+      <div class="flex lg:hidden">
+        <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+          aria-controls="mobile-menu">
+          <span class="sr-only">Open main menu</span>
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <!-- mobile menu end -->
+
+
+      <!-- desktop menu -->
+      <div class="hidden lg:flex lg:gap-x-12">
+        <div class="relative">
+          <!--  -->
+
+          <!-- services drop down -->
+          <button id="servicesButton" type="button"
+            class="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900" aria-expanded="false">
+            Services
+            <svg class="h-5 w-5 flex-none text-gray-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+
+          <!--
+          'Product' flyout menu, show/hide based on flyout menu state.
+
+          Entering: "transition ease-out duration-200"
+            From: "opacity-0 translate-y-1"
+            To: "opacity-100 translate-y-0"
+          Leaving: "transition ease-in duration-150"
+            From: "opacity-100 translate-y-0"
+            To: "opacity-0 translate-y-1"
+        -->
+          <div id="servicesDropdown"
+            class="hidden absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
+            <div class="p-4 ">
+              <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                <div
+                  class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+                  </svg>
+                </div>
+                <div class="flex-auto hidde">
+                  <a href="services.html" class="block font-semibold text-gray-900">
+                    Fire fighting systems installations
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">Get a better understanding of your traffic</p>
+                </div>
+              </div>
+              <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                <div
+                  class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
+                  </svg>
+                </div>
+                <div class="flex-auto">
+                  <a href="services.html" class="block font-semibold text-gray-900">
+                    Fire fighting systems design
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">Speak directly to your customers</p>
+                </div>
+              </div>
+              <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                <div
+                  class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+                  </svg>
+                </div>
+                <div class="flex-auto">
+                  <a href="services.html" class="block font-semibold text-gray-900">
+                    Maintenance and Inspection
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">Your customers' data will be safe and secure</p>
+                </div>
+              </div>
+              <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                <div
+                  class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+                  </svg>
+                </div>
+                <div class="flex-auto">
+                  <a href="services.html" class="block font-semibold text-gray-900">
+                    Fire Fighting Equipment Supplies
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">Connect with third-party tools</p>
+                </div>
+              </div>
+              <div class="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50">
+                <div
+                  class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+                  <svg class="h-6 w-6 text-gray-600 group-hover:text-indigo-600" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                  </svg>
+                </div>
+                <div class="flex-auto">
+                  <a href="#" class="block font-semibold text-gray-900">
+                    Training & Systems Operation
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">Build strategic funnels that will convert</p>
+                </div>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50"></div>
+          </div>
+        </div>
+
+        <a href="projects.html" class="text-sm font-semibold leading-6 text-gray-900">Projects</a>
+        <a href="systems.html" class="text-sm font-semibold leading-6 text-gray-900">Systems</a>
+
+      </div>
+      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+        <a href="/path/to/portfolio.pdf" download
+          class="text-sm font-semibold leading-6 text-gray-900 bg-red-600 hover:bg-red-800 text-white px-4 py-2 rounded-md transition duration-300 ease-in-out">Our
+          Portfolio <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+          </svg></a>
+      </div>
+    </nav>
+    <!-- Mobile menu, show/hide based on menu open state. -->
+    <div class="lg:hidden hidden" role="dialog" aria-modal="true" id="mobile-menu">
+      <!-- Background backdrop, show/hide based on slide-over state. -->
+      <div class="fixed inset-0 z-10"></div>
+      <div
+        class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div class="flex items-center justify-between">
+          <a href="#" class="-m-1.5 p-1.5">
+            <span class="sr-only">Safety Hub Egypt</span>
+            <img class="h-8 w-auto" src="/images/logo-black.png" alt="Safety Hub Egypt Logo" />
+          </a>
+          <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700" aria-controls="mobile-menu">
+            <span class="sr-only">Close menu</span>
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="mt-6 flow-root">
+          <div class="-my-6 divide-y divide-gray-500/10">
+            <div class="space-y-2 py-6">
+              <div class="-mx-3">
+                <button type="button"
+                  class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  aria-controls="disclosure-1" aria-expanded="false">
+                  Services
+                  <!--
+                  Expand/collapse icon, toggle classes based on menu open state.
+
+                  Open: "rotate-180", Closed: ""
+                -->
+                  <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                    <path fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </button>
+                <!-- 'Services' sub-menu, show/hide based on menu state. -->
+                <div class="mt-2 space-y-2 hidden" id="disclosure-1">
+                  <a href="services.html"
+                    class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Fire fighting systems installations</a>
+                  <a href="services.html"
+                    class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Fire fighting systems design</a>
+                  <a href="services.html"
+                    class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Maintenance and Inspection</a>
+                  <a href="services.html"
+                    class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Fire Fighting Equipment Supplies</a>
+                  <a href="#"
+                    class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Training & Systems Operation</a>
+                </div>
+              </div>
+              <a href="projects.html"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Projects</a>
+              <a href="systems.html"
+                class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Systems</a>
+            </div>
+            <div class="py-6">
+              <a href="/path/to/portfolio.pdf" download
+                class="block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white bg-red-600 hover:bg-red-800 transition duration-300 ease-in-out">
+                Our Portfolio
+                <svg class="inline-block w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- nav end -->
+
+
+
+
+            <!-- hero main -->
+              <div class="hero min-h-screen" style="background-image: url(./images/bg-hero-image.webp)">
+              <!-- <div class="hero-overlay  bg-opacity-60"></div> -->
+              <div class="hero-content text-neutral-content text-center">
+                <div class="max-w-md">
+                  <h1 class="mb-8 text-6xl font-bold text-white">Consultancy And Fire Protections Systems</h1>
+                  <!-- <p class="mb-5">
+                      Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In
+                      deleniti eaque aut repudiandae et a id nisi.
+                    </p> -->
+                  <button class="btn btn-primar bg-red-600 text-white border-0">Contact us</button>
+                </div>
+              </div>
+              </div>
+            <!-- hero main end -->
+
+            <!-- clients section -->
+            <div class="bg-white py-24 sm:py-32">
+              <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <h2 class="text-center text-lg font-semibold leading-8 text-gray-900">Cliens who trust us with thier safety</h2>
+                <div
+                  class="mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                  <img class="col-span-2 max-h-14 w-full object-contain lg:col-span-1" src="images/clients-icons/logo1.png"
+                    alt="Client 1" width="158" height="48" />
+                  <img class="col-span-2 max-h-14 w-full object-contain lg:col-span-1" src="images/clients-icons/logo1.png"
+                    alt="Client 2" width="158" height="48" />
+                  <img class="col-span-2 max-h-14 w-full object-contain lg:col-span-1" src="images/clients-icons/logo1.png"
+                    alt="Client 3" width="158" height="48" />
+                  <img class="col-span-2 max-h-14 w-full object-contain sm:col-start-2 lg:col-span-1"
+                    src="images/clients-icons/logo1.png" alt="Client 4" width="158" height="48" />
+                  <img class="col-span-2 col-start-2 max-h-14 w-full object-contain sm:col-start-auto lg:col-span-1"
+                    src="images/clients-icons/logo1.png" alt="Client 1" width="158" height="48" />
+                </div>
+              </div>
+            </div>
+            <!-- clients section end  -->
+
+            <!-- services section -->
+            <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
+              <img src="images/bg.jpg" alt=""
+                class="absolute inset-0 -z-10 h-full w-full object-cover object-right md:object-center" />
+              <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+                aria-hidden="true">
+                <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="
+                      clip-path: polygon(
+                        74.1% 44.1%,
+                        100% 61.6%,
+                        97.5% 26.9%,
+                        85.5% 0.1%,
+                        80.7% 2%,
+                        72.5% 32.5%,
+                        60.2% 62.4%,
+                        52.4% 68.1%,
+                        47.5% 58.3%,
+                        45.2% 34.5%,
+                        27.5% 76.7%,
+                        0.1% 64.9%,
+                        17.9% 100%,
+                        27.6% 76.8%,
+                        76.1% 97.7%,
+                        74.1% 44.1%
+                      );
+                    "></div>
+              </div>
+              <div
+                class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+                aria-hidden="true">
+                <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="
+                      clip-path: polygon(
+                        74.1% 44.1%,
+                        100% 61.6%,
+                        97.5% 26.9%,
+                        85.5% 0.1%,
+                        80.7% 2%,
+                        72.5% 32.5%,
+                        60.2% 62.4%,
+                        52.4% 68.1%,
+                        47.5% 58.3%,
+                        45.2% 34.5%,
+                        27.5% 76.7%,
+                        0.1% 64.9%,
+                        17.9% 100%,
+                        27.6% 76.8%,
+                        76.1% 97.7%,
+                        74.1% 44.1%
+                      );
+                    "></div>
+              </div>
+              <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-2xl lg:mx-0">
+                  <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">SYSTEMS</h2>
+                  <p class="mt-6 text-lg leading-8 text-gray-300">
+                    Safety First Egypt provide internal fire hydrants and sprinklers <br />
+                    as part of their fire protection.
+                  </p>
+                </div>
+                <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+                  <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+                    <div class="flex flex-col-reverse">
+                      <dt class="text-base leading-7 text-gray-300">
+                        Our state of the art fire suppression systems are used to prevent fire spread in facility or building.
+                      </dt>
+                      <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Fire Supression</dd>
+                    </div>
+                    <div class="flex flex-col-reverse">
+                      <dt class="text-base leading-7 text-gray-300">
+                        Safety hub Egypt provide internal fire hydrants and sprinklers as part of their fire protection.
+                      </dt>
+                      <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Water Network Systems</dd>
+                    </div>
+                    <div class="flex flex-col-reverse">
+                      <dt class="text-base leading-7 text-gray-300">
+                        A fire sprinkler system is an active fire protection method, consisting of a water supply system that
+                        provides adequate pressure for fire sprinklers
+                      </dt>
+                      <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Sprinklers</dd>
+                    </div>
+                    <div class="flex flex-col-reverse">
+                      <dt class="text-base leading-7 text-gray-300">
+                        A fire alarm system warns people when smoke, fire, carbon monoxide or other fire-related or general
+                        notification emergencies are detected.
+                      </dt>
+                      <dd class="text-2xl font-bold leading-9 tracking-tight text-white">Fire Alarm</dd>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <!-- services section end -->
+
+              <!-- systems -->
+              <div class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+                <div class="absolute inset-0 -z-10 overflow-hidden">
+                  <svg
+                    class="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
+                    aria-hidden="true">
+                    <defs>
+                      <pattern id="e813992c-7d03-4cc4-a2bd-151760b470a0" width="200" height="200" x="50%" y="-1"
+                        patternUnits="userSpaceOnUse">
+                        <path d="M100 200V.5M.5 .5H200" fill="none" />
+                      </pattern>
+                    </defs>
+                    <svg x="50%" y="-1" class="overflow-visible fill-gray-50">
+                      <path d="M-100.5 0h201v201h-201Z M699.5 0h201v201h-201Z M499.5 400h201v201h-201Z M-300.5 600h201v201h-201Z"
+                        stroke-width="0" />
+                    </svg>
+                    <rect width="100%" height="100%" stroke-width="0" fill="url(#e813992c-7d03-4cc4-a2bd-151760b470a0)" />
+                  </svg>
+                </div>
+                <div
+                  class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+                  <div
+                    class="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                    <div class="lg:pr-4">
+                      <div class="lg:max-w-lg">
+                        <p class="text-base font-semibold leading-7 text-red-600">Safety Hub Egypt</p>
+                        <h1 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Fire Protection Systems</h1>
+                        <p class="mt-6 text-xl leading-8 text-gray-700">
+                          Safety Hub Egypt provide internal fire hydrants and sprinklers as part of their fire protection.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+                    <img class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+                      src="images/fire-extinguisher.jpg" alt="" />
+                  </div>
+                  <div
+                    class="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
+                    <div class="lg:pr-4">
+                      <div class="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg">
+                        <p>
+                          Safety First Egypt specializes in providing comprehensive fire protection solutions, including internal
+                          fire hydrants and sprinkler systems. These systems are essential in preventing the spread of fire within
+                          a facility or building. Additionally, fire suppression systems are deployed to stop fires before they
+                          cause significant damage. Safety Hub Egypt also offers advanced water network systems, ensuring
+                          effective fire protection through internal fire hydrants and sprinklers.
+                        </p>
+                        <ul role="list" class="mt-8 space-y-8 text-gray-600">
+                          <li class="flex gap-x-3">
+                            <span><strong class="font-semibold text-gray-900">FIRE SUPRESSION </strong> Fire suppression systems are
+                              used to prevent fire spread in facility or building.
+                            </span>
+                          </li>
+                          <li class="flex gap-x-3">
+                            <span><strong class="font-semibold text-gray-900">WATER NETWORK SYSTEMS</strong> Anim aute id magna
+                              aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.</span>
+                          </li>
+                          <li class="flex gap-x-3">
+                            <span><strong class="font-semibold text-gray-900">SPRINKLER</strong> A fire sprinkler system is an
+                              active
+                              fire protection method, consisting of a water supply system</span>
+                          </li>
+                          <li class="flex gap-x-3">
+                            <span><strong class="font-semibold text-gray-900">FIRE ALARM</strong> Ac tincidunt sapien A fire alarm
+                              system warns people when smoke, fire, carbon monoxide or other fire-related or general notification
+                              emergencies are detected.
+                            </span>
+                          </li>
+                        </ul>
+                        <h2 class="mt-16 text-2xl font-bold tracking-tight text-gray-900">Protecting Spaces</h2>
+                        <p class="mt-6">
+                          Safety Hub Egypt also offers advanced water network systems, ensuring effective fire protection through
+                          internal fire hydrants and sprinklers. An integral part of this protection is the fire sprinkler system,
+                          which actively controls fires using a dedicated water supply. Furthermore, fire alarm systems are
+                          crucial in alerting individuals to the presence of smoke, fire, or other emergencies, allowing for
+                          timely evacuation and safety measures.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- systems end -->
+
+
+
+  <!-- projects -->
+  <div class="bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">From our projects</h2>
+        <p class="mt-2 text-lg leading-8 text-gray-600">
+          Safety First Egypt provide internal fire hydrants and sprinklers as part of their fire protection.
+        </p>
+      </div>
+      <div
+        class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <article class="flex max-w-xl flex-col items-start justify-between">
+
+          <div class="flex items-center flex-col gap-x-4 text-xs">
+            <!-- <a href="#"
+              class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Projects</a> -->
+            <img src="images/projects/project1.webp" alt="">
+
+          </div>
+
+          <div class="group relative">
+
+            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Boost your conversion rate
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+              Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo
+              necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.
+            </p>
+
+        </article>
+
+        <article class="flex max-w-xl flex-col items-start justify-between">
+
+          <div class="flex items-center flex-col gap-x-4 text-xs">
+            <!-- <a href="#"
+              class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Projects</a> -->
+            <img src="images/projects/project1.webp" alt="">
+
+          </div>
+
+          <div class="group relative">
+
+            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Boost your conversion rate
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+              Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo
+              necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.
+            </p>
+
+        </article>
+
+        <article class="flex max-w-xl flex-col items-start justify-between">
+
+          <div class="flex items-center flex-col gap-x-4 text-xs">
+            <!-- <a href="#"
+              class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Projects</a> -->
+            <img src="images/projects/project1.webp" alt="">
+
+          </div>
+
+          <div class="group relative">
+
+            <h3 class="mt-3 text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+              <a href="#">
+                <span class="absolute inset-0"></span>
+                Boost your conversion rate
+              </a>
+            </h3>
+            <p class="mt-5 line-clamp-3 text-sm leading-6 text-gray-600">
+              Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo
+              necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.
+            </p>
+
+        </article>
+
+
+
+        <a href="#" class="hover:text-red-600">
+          View More Projects
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- projects end -->
+
+
+
+
+  <!-- contact us -->
+  <section class="contact-form">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <!-- contact us end -->
+
+
+  <!-- footer -->
+  <footer class="bg-white" aria-labelledby="footer-heading">
+    <h2 id="footer-heading" class="sr-only">Footer</h2>
+    <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div class="space-y-8">
+          <img class="h-7" src="images/logo-black.png" alt="Company name">
+          <p class="text-sm leading-6 text-gray-600">Consultancy And Fire Protections Systems.</p>
+          <div class="flex space-x-6">
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Facebook</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Instagram</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">Twitter</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+              </svg>
+            </a>
+
+            <a href="#" class="text-gray-400 hover:text-gray-500">
+              <span class="sr-only">YouTube</span>
+              <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z"
+                  clip-rule="evenodd" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+            <div>
+              <h3 class="text-sm font-semibold leading-6 text-gray-900">Sitemap</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li>
+                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Home</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Projects</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Services</a>
+                </li>
+                <li>
+                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">Systems</a>
+                </li>
+              </ul>
+            </div>
+            <div class="mt-10 md:mt-0">
+              <h3 class="text-sm font-semibold leading-6 text-gray-900">Contact Us</h3>
+              <ul role="list" class="mt-6 space-y-4">
+                <li>
+                  <a href="#" class="text-sm leading-6 text-gray-600 hover:text-gray-900">V1, Dahab heights, Dahab,
+                    South sinai
+                    V 14 - 309 Street New Maadi - Cairo</a>
+                </li>
+                <li>
+                  <a href="tel:01150020079" class="text-sm leading-6 text-gray-600 hover:text-gray-900">01150020079</a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <div class="md:grid md:grid-cols-2 md:gap-8">
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 border-t border-gray-900/10 pt-8 sm:mt-20 lg:mt-24">
+        <p class="text-xs leading-5 text-gray-500">&copy; 2020 Safety Hub Egypt, Inc. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer end -->
+
+
+
+  <!-- Update JavaScript link at the bottom of the file -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>
