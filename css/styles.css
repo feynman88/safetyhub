@@ -33,7 +33,7 @@
 .contact-form label {
   display: block;
   margin-bottom: 5px;
-  color: #333;
+  color: #070707;
   font-weight: bold;
 }
 
@@ -41,6 +41,7 @@
 .contact-form textarea {
   width: 100%;
   padding: 14px;
+  background-color: #f0f0f0;
   border: 1px solid #ddd;
   border-radius: 4px;
   font-size: 16px;
